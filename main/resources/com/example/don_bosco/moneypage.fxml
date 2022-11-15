@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.don_bosco.moneycontroller">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="242.0" style="-fx-background-color: #263f73;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="expenses" layoutX="24.0" layoutY="109.0" mnemonicParsing="false" onAction="#expenses" prefHeight="35.0" prefWidth="195.0" style="-fx-background-color: #236F72;" text="Expenses" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="savings" layoutX="24.0" layoutY="182.0" mnemonicParsing="false" onAction="#savings" prefHeight="35.0" prefWidth="195.0" style="-fx-background-color: #236F72;" text="Savings" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="overview" layoutX="24.0" layoutY="37.0" mnemonicParsing="false" onAction="#overview" prefHeight="35.0" prefWidth="195.0" style="-fx-background-color: #236F72;" text="Overview" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="24.0" layoutY="414.0" mnemonicParsing="false" onAction="#logout" prefHeight="23.0" prefWidth="195.0" style="-fx-background-color: white;" text="Logout">
+               <font>
+                  <Font name="Verdana Bold Italic" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <HBox prefHeight="42.0" prefWidth="700.0" style="-fx-background-color: #236F72;" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="76.0" layoutY="32.0" prefHeight="17.0" prefWidth="291.0" text="Money detail">
+               <font>
+                  <Font name="Verdana Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="51.0" layoutY="125.0" prefHeight="30.0" prefWidth="327.0" text="The budget for the month">
+               <font>
+                  <Font name="Verdana Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="162.0" layoutX="215.0" layoutY="85.0" startX="-150.0" />
+            <Button fx:id="ok" layoutX="132.0" layoutY="335.0" mnemonicParsing="false" onAction="#ok" prefHeight="26.0" prefWidth="144.0" style="-fx-background-color: #81bee3;" text="OK">
+               <font>
+                  <Font name="Verdana Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tf_amount" layoutX="131.0" layoutY="209.0" prefHeight="53.0" prefWidth="150.0" />
+            <Label fx:id="message" layoutX="91.0" layoutY="290.0" prefHeight="18.0" prefWidth="225.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
